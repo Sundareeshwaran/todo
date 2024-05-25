@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  margin: 1rem;
+  height: 90vh;
+  transition: 0.6s ease-in-out;
+}
+
+.container .card {
+  width: 600px;
+  background: rgb(112, 54, 243);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 500px rgb(99, 5, 157);
+}
+.card .card-header {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+.card .input-area {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.card .input-area input {
+  width: 60%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-in;
+}
+.card .input-area input:focus {
+  outline: 2px solid #142bb7;
+}
+.card .input-area button {
+  background-color: rgb(20, 43, 183);
+  color: rgb(205, 231, 248);
+  width: 25%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.card .list-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.card .list-area button {
+  background-color: rgb(181, 15, 76);
+  color: rgb(205, 231, 248);
+  width: 25%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.container .footer {
+  color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 1rem 0;
+  }
+
+  .container .card {
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .card .list-area button {
+    font-size: 0.9rem;
+  }
+  .card .input-area button {
+    font-size: 0.9rem;
+  }
+}
